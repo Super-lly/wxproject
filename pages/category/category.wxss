@@ -1,0 +1,47 @@
+page{
+  height: 100%;
+}
+.category{
+  height: 100%;
+}
+.scroll_area{
+  height: calc(100vh - 90rpx);
+  display: flex;
+}
+/* left */
+.left_meau{
+  flex: 2;
+}
+.leftList{
+  height: 80rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30rpx;
+}
+.active{
+  color: var(--themeColor);
+  border-left: 10rpx solid var(--themeColor);
+}
+
+/* right */
+.right_content{
+  flex: 5;
+}
+.right_navcont{
+  display: flex;
+  flex-wrap: wrap;
+}
+.right_nav{
+  width: 33.33%;
+  text-align: center;
+}
+.right_name{
+  height: 80rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.right_img{
+  width: 50%;
+}

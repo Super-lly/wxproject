@@ -1,0 +1,3 @@
+<view class="auth">
+  <button plain="true" type="warn" bindgetuserinfo="getUserInfo" open-type="getUserInfo">点击获取用户信息</button>
+</view>

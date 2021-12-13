@@ -1,0 +1,40 @@
+/* swiper */
+.index_swiper {
+  height: 340rpx;
+}
+.swiper_img {
+  width: 100%;
+}
+/* cate */
+.cate {
+  display: flex;
+}
+.cate_item {
+  flex: 1;
+  padding: 20rpx;
+}
+.cate_img {
+  width: 100%;
+}
+/* floor */
+.floor_group {
+  width: 100%;
+  padding: 10rpx 0;
+}
+.out_img {
+  width: 100%;
+}
+.floor_content{
+  overflow: hidden;
+}
+.flr_navigator {
+  float: left;
+  width: 33.32%;
+}
+.flr_navigator:nth-last-child(-n+4){
+  height: 27.72711207vw;
+}
+.in_img{
+  width: 100%;
+  height: 100%;
+}

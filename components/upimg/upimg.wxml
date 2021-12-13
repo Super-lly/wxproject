@@ -1,0 +1,4 @@
+<view class="up_img_warp">
+  <image src="{{src}}" class="up_img_warp_img"></image>
+  <icon type="clear" size="15" color="red" class="up_img_warp_icon"></icon>
+</view>

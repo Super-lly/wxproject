@@ -1,0 +1,26 @@
+<view class="category">
+  <!-- 引入搜索框组件 -->
+  <searchInput></searchInput>
+  <!-- 设置滚动区域 -->
+  <view class="scroll_area">
+    <!-- 左侧可滚动菜单 -->
+    <scroll-view scroll-y="true" class="left_meau">
+      <view wx:for="{{leftList}}" wx:key="*this" class="leftList {{index === current ? 'active': ''}}" bindtap="getIndex" data-index="{{index}}">{{item}}</view>
+    </scroll-view>
+    <!-- 右侧可滚动相关内容 -->
+    <scroll-view scroll-y="true" class="right_content" scroll-top="{{scrollTop}}">
+      <view class="rightcont" wx:for="{{rightList}}" wx:key="cat_id" wx:for-item="list_item" wx:for_index="list_index">
+        <!-- 每一块标题 -->
+        <view class="right_name">{{list_item.cat_name}}</view>
+        <!-- 每一块展示主要内容 -->
+        <view class="right_navcont">
+          <navigator wx:for="{{list_item.children}}" wx:key="cat_name" class="right_nav" url="/pages/goods_list/goods_list?cid=5">
+            <!-- cid={{list_item.cat_id}} -->
+            <image src="{{item.cat_icon}}" class="right_img" mode="widthFix"></image>
+            <view>{{item.cat_name}}</view>
+          </navigator>
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+</view>
